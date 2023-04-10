@@ -3,7 +3,7 @@
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname Exercise-08) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (require 2htdp/image)
 
-(define cat (bitmap "images/cat1.png"))
+(define cat (bitmap "../images/cat1.png"))
 
 (if (>= (image-height cat) (image-width cat)) "tall" "wide")
 
