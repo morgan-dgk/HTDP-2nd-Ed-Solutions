@@ -1,0 +1,16 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname Exercise-13) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+
+
+; tests
+(check-expect (string-first "hello world") "h")
+(check-expect (string-first "") "")
+
+; String -> 1String
+; extracts the first 1String from a non-empty string
+
+(define (string-first str)
+  (if (= (string-length str) 0) str  (string-ith str 0))
+)
+
